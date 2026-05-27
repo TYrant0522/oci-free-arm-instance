@@ -94,3 +94,6 @@ jobs:
             ```json
             ${{ steps.create_vm.outputs.log_data }}
             ```
+      - name: Debug OCI
+        run: |
+          oci iam region list --debug
